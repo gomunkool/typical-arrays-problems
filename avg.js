@@ -1,10 +1,14 @@
 function avg(num) {
-    let length = num.length;
-    let sum = 0;
-    for (let i = 0; i < num.length; i++) {
-        sum = sum + num[i];
+    if (num) {
+        let length = num.length;
+        let sum = 0;
+        for (let i = 0; i < num.length; i++) {
+            sum = sum + num[i];
+        }
+        return sum / length;
+    } else {
+        return 0;
     }
-    return sum / length;
 }
 
 console.log(

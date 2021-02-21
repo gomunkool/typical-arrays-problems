@@ -1,12 +1,16 @@
 function max(num) {
-    let resMax = num[0];
+    if (num) {
+        let resMax = num[0];
 
-    for (let i = 1; i < num.length; i++) {
-        if (resMax < num[i]) {
-            resMax = num[i];
+        for (let i = 1; i < num.length; i++) {
+            if (resMax < num[i]) {
+                resMax = num[i];
+            }
         }
+        return resMax;
+    } else {
+        return 0;
     }
-    return resMax;
 }
 
 console.log(
